@@ -10,12 +10,6 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link
-      href="/docs/5.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
 
     <!-- Custom styles for this template -->
     <link href="../css/princing.css" rel="stylesheet" />
@@ -36,7 +30,7 @@
           class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"
         >
           <a
-            href="/"
+            href="/index.html"
             class="d-flex align-items-center text-dark text-decoration-none"
           >
             <svg
@@ -59,16 +53,24 @@
           </a>
 
           <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+            <a
+              class="me-3 py-2 text-dark text-decoration-none"
+              href="/index.html"
               >Início</a
             >
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+            <a
+              class="me-3 py-2 text-dark text-decoration-none"
+              href="../pages/contatos.html"
               >Sobre nós</a
             >
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+            <a
+              class="me-3 py-2 text-dark text-decoration-none"
+              href="../pages/login.html"
               >Login</a
             >
-            <a class="py-2 text-dark text-decoration-none" href="#">Planos</a>
+            <a class="py-2 text-dark text-decoration-none" href="princing.html"
+              >Planos</a
+            >
           </nav>
         </div>
 
@@ -88,11 +90,11 @@
               <div class="card-header py-3">
                 <h4 class="my-0 fw-normal">Free</h4>
               </div>
-              <div class="card-body">
+              <div class="card-body teste">
                 <h1 class="card-title pricing-card-title">
                   R$0<small class="text-muted fw-light">/ano</small>
                 </h1>
-                <ul class="list-unstyled mt-3 mb-4">
+                <ul class="list-unstyled mt-3 mb-6">
                   <li>Comunidade TechMind no Discord</li>
                   <li>10 aulas gratuitas de uma trilha específica</li>
                 </ul>
@@ -100,7 +102,7 @@
                   type="button"
                   class="w-100 btn btn-lg btn-outline-primary"
                 >
-                  Acesso grátis!
+                  <a href="../pages/cadastro.html"> Acesso grátis!</a>
                 </button>
               </div>
             </div>
@@ -119,11 +121,9 @@
                   <li>Todas as aulas da trilha de carreira escolhida</li>
                   <li>Ajuda especialista em carreira tech (1:1)</li>
                   <li>1 ano de acesso</li>
-                  <li></li>
                 </ul>
-
                 <button type="button" class="w-100 btn btn-lg btn-primary">
-                  Assine o Premium
+                  <a href="../pages/cadastro.html"> Assine o Premium!</a>
                 </button>
               </div>
             </div>
@@ -148,7 +148,7 @@
                   <li>Consultoria especial para entrevistas em inglês.</li>
                 </ul>
                 <button type="button" class="w-100 btn btn-lg btn-primary">
-                  Assine o Pro
+                  <a href="../pages/cadastro.html"> Assine o Pro!</a>
                 </button>
               </div>
             </div>
@@ -275,20 +275,15 @@
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
           <div class="col-12 col-md">
-            <img
-              class="mb-2"
-              src="/docs/5.2/assets/brand/bootstrap-logo.svg"
-              alt=""
-              width="24"
-              height="19"
-            />
             <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
           </div>
           <div class="col-6 col-md">
             <h5>Início</h5>
             <ul class="list-unstyled text-small">
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
+                <a
+                  class="link-secondary text-decoration-none"
+                  href="/index.html"
                   >Last time</a
                 >
               </li>
@@ -298,7 +293,9 @@
             <h5>Sobre nós</h5>
             <ul class="list-unstyled text-small">
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
+                <a
+                  class="link-secondary text-decoration-none"
+                  href="./contatos.html"
                   >Resource</a
                 >
               </li>
@@ -308,7 +305,11 @@
             <h5>Nossos Planos</h5>
             <ul class="list-unstyled text-small">
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#">Team</a>
+                <a
+                  class="link-secondary text-decoration-none"
+                  href="./princing.html"
+                  >Team</a
+                >
               </li>
             </ul>
           </div>

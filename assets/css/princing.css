@@ -19,12 +19,28 @@ html {
   min-width: 220px;
 }
 
+.teste{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
 }
 
 @media (min-width: 768px) {
