@@ -35,15 +35,17 @@
         </div>
       </nav>
 
-    <section class="cadastro row">
+    <section class="cadastro row m-5">
+      <!-- justify-content-md-center /  -->
 
-      <div class="image col-md-6">
-        <img class ="imagem" src="../images/jenice.jpg" alt="Conheça nossos planos">
+      <div class="image col-md-8">
+        <img class="imagem" src="../images/forms.webp" alt="Conheça nossos planos">
+        <p class="p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illum nostrum reiciendis exercitationem consequatur perspiciatis nobis neque numquam soluta consectetur harum a architecto iste sint accusantium voluptate nihil, quos eaque!</p>
       </div>
 
-      <div class="forms col-md-6">
-        <form class="row g-2 p-5">
-          <h1 class="text-center">Cadastre-se</h1>
+      <div class="forms col-md-4 border rounded-3">
+        <form class="row g-2 p-3">
+          <h2 class="text-center">Cadastre-se</h2>
 
           <div class="col-md-12">
             <label for="name" class="form-label">Nome Completo</label>
@@ -57,21 +59,21 @@
           <div class="col-md-6">
             <label for="inputEmai" class="form-label">E-mail</label>
             <input type="email" class="form-control" id="inputEmail1" placeholder="example@email.com" required>
-            <div id="nomeInvalido" class="invalid-feedback">
+            <div id="emailInvalido" class="invalid-feedback">
               Digite um email válido.
             </div>
-          </div>
+          </div>          
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Confirme seu e-mail</label>
             <input type="email" class="form-control" id="inputEmail2" placeholder="example@email.com" required>
-            <div id="nomeInvalido" class="invalid-feedback">
+            <div id="emailInvalido" class="invalid-feedback">
               Digite um email válido.
             </div>
           </div>
           <div class="col-md-5">
             <label for="rg" class="form-label">RG</label>
             <input type="rg" class="form-control" id="inputRg" placeholder="123456789" required>
-            <div id="nomeInvalido" class="invalid-feedback">
+            <div id="rgInvalido" class="invalid-feedback">
               Não é um RG Válido
             </div>
           </div>
@@ -83,7 +85,7 @@
 
             <div class="col-md-3">
               <label for="cep" class="form-label">CEP</label>
-              <input type="zip" class="form-control" id="inputCep" placeholder="12345-789">
+              <input type="zip" class="form-control" id="inputCep" placeholder="12345-789" required>
               <div id="cepInvalido" class="invalid-feedback">
                 CEP Inválido
               </div>

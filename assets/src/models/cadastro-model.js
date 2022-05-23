@@ -12,19 +12,19 @@ class Model {
         this.estado = $("#inputState"),
         this.senha1 = $('#inputPassword1')
         this.senha2 = $('#inputPassword2')
-        this.msg = ''
-       
+        this.msg = ''       
   }
 
 
   viaCep(cep) {
     const url = `https://viacep.com.br/ws/${cep}/json/`;
-    
-       fetch(url).then((response) =>            
-            response.json()
-        ).then((data) => {
-           view.cep(data)
-        })
+      try{
+       let apiResponse = fetch(url).then((response) =>            
+            response.json())     
+        return apiResponse
+      } catch (e) {
+        log('Cep não encontrado', e)
+      }
     }
 
     validaCep() {
@@ -46,9 +46,11 @@ class Model {
   }
 
   verificaNome(nome) {
-        if(nome == '' || nome.length < 5) {
+        if (!nome){
+            return ''
+        } else if(nome.length < 5) { 
             return 'invalid'
-        } else {
+        } else {        
             return 'valid'
         }
   }
@@ -67,22 +69,31 @@ class Model {
     const valid = /^[0-9]{8}-?[0-9]{1}$/;
     if(rg.match(valid)) {
       return 'valid'
-    } else if(rg == ''){
+    } else if(!rg){
       return ''
     } else {
       return 'invalid'
     }
   } 
 
-  senhas(val1, val2) {
+  toEqual (val1, val2) {
     if(val1 != val2) {
-      console.log('foi')
-      this.msg = 'Senhas não coincidem'
       return 'invalid'
-    } else {      
+    } else if (val1 == val2) {
       return 'valid'
+    } else {
+      return ''
     }
   }
+
+  // senhas(val1, val2) {
+  //   if(val1 != val2) {
+  //     this.msg = 'Senhas não coincidem'
+  //     return 'invalid'
+  //   } else {
+  //     return 'valid'
+  //   }
+  // }
 
 
 }
