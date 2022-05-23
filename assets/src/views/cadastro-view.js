@@ -10,7 +10,7 @@ class View {
         $("#inputAddress").val(obj.logradouro);
         $("#inputBairro").val(obj.bairro);
         $("#inputCity").val(obj.localidade);
-        $("#inputState").val(obj.uf);      
+        $("#inputState").val(obj.uf);    
     }
     
 
