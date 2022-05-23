@@ -8,6 +8,11 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: azure;
+}
+
+.forms {
+    background-color: aliceblue;
 }
 
 /* .forms {
@@ -29,9 +34,9 @@ body {
     justify-content: center;
 }*/
 
-.imagem {
+/* .imagem {
     display: flex;
     justify-content: center;
     width: 50%;
     height: 90%;
-} 
+}  */
