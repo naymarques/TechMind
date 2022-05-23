@@ -35,43 +35,63 @@
         </div>
       </nav>
 
-    <section class="cadastro">
+    <section class="cadastro row">
 
-      <div class="image">
+      <div class="image col-md-6">
         <img class ="imagem" src="../images/jenice.jpg" alt="Conheça nossos planos">
       </div>
 
-      <div class="forms">
+      <div class="forms col-md-6">
         <form class="row g-2 p-5">
           <h1 class="text-center">Cadastre-se</h1>
 
           <div class="col-md-12">
             <label for="name" class="form-label">Nome Completo</label>
-            <input type="name" class="form-control" id="inputName" placeholder="Nome e Sobrenome">
+            <input type="name" class="form-control" id="inputName" placeholder="Nome e Sobrenome" required>
+            <div id="nomeInvalido" class="invalid-feedback">
+              Por favor digite o seu nome Completo.
+            </div>
           </div>
+          
           
           <div class="col-md-6">
             <label for="inputEmai" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="inputEmail1" placeholder="example@email.com">
+            <input type="email" class="form-control" id="inputEmail1" placeholder="example@email.com" required>
+            <div id="nomeInvalido" class="invalid-feedback">
+              Digite um email válido.
+            </div>
           </div>
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Confirme seu e-mail</label>
-            <input type="email" class="form-control" id="inputEmail2" placeholder="example@email.com">
+            <input type="email" class="form-control" id="inputEmail2" placeholder="example@email.com" required>
+            <div id="nomeInvalido" class="invalid-feedback">
+              Digite um email válido.
+            </div>
+          </div>
+          <div class="col-md-5">
+            <label for="rg" class="form-label">RG</label>
+            <input type="rg" class="form-control" id="inputRg" placeholder="123456789" required>
+            <div id="nomeInvalido" class="invalid-feedback">
+              Não é um RG Válido
+            </div>
           </div>
           
-            <div class="col-md-5">
+            <div class="col-md-4">
               <label for="tel" class="form-label">Telefone</label>
-              <input type="tel" class="form-control" id="tel" placeholder="(21) 12345-6789">
+              <input type="tel" class="form-control" id="inputTel" placeholder="(21) 12345-6789">
             </div>
 
-            <div class="col-md-3 ml-5">
+            <div class="col-md-3">
               <label for="cep" class="form-label">CEP</label>
-              <input type="zip" class="form-control" id="cep" placeholder="12345-789">
+              <input type="zip" class="form-control" id="inputCep" placeholder="12345-789">
+              <div id="cepInvalido" class="invalid-feedback">
+                CEP Inválido
+              </div>
             </div>
         
           
-          <div>
-            <div class="col-12"></div>
+          
+            <div class="col-12">
               <label for="inputAddress" class="form-label">Rua</label>
               <input type="text" class="form-control" id="inputAddress" placeholder="Deputado Avelino Cruz">
             </div>
@@ -81,9 +101,9 @@
               <input type="text" class="form-control" id="inputNumber" placeholder="123">
             </div>
             <div class="col-md-9">
-              <label for="inputComp" class="form-label">Complemento (opcional)</label>
-              <input type="text" class="form-control" id="inputComp">
-            </div>
+              <label for="inputNumber" class="form-label">Bairro</label>
+              <input type="text" class="form-control" id="inputBairro" placeholder="">
+            </div>            
             
             <div class="col-md-6">
               <label for="inputCity" class="form-label">Cidade</label>
@@ -93,16 +113,24 @@
               <label for="inputState" class="form-label">Estado</label>
               <input type="text" class="form-control" id="inputState" readonly>
             </div>
+            <div class="col-md-9">
+              <label for="inputComp" class="form-label">Complemento (opcional)</label>
+              <input type="text" class="form-control" id="inputComp">
+            </div>
+          
 
 
 
             <div class="col-md-6">
               <label for="inputPassword4" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              <input type="password" class="form-control" id="inputPassword1" required>
             </div>
             <div class="col-md-6">
               <label for="inputPassword4" class="form-label">Confirmação de Senha</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              <input type="password" class="form-control" id="inputPassword2" required>
+              <div id="password" class="invalid-feedback">
+                Senhas não coincidem
+              </div>
           </div>
   
           <div class="col-12">
@@ -114,7 +142,7 @@
             </div>
           </div>
           <div class="col-12 text-center">
-            <button type="submit" class="btn btn-primary">Prosseguir com cadastro</button>
+            <button type="submit" class="btn btn-primary" id="btn">Prosseguir com cadastro</button>
           </div>
         </form>
       </div>    
@@ -122,9 +150,13 @@
 
     
     
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="../src/models/cadastro-model.js"></script>
+<script src="../src/views/cadastro-view.js"></script>
+<script src="../src/controllers/cadastro-controller.js"></script>
+
     
 </body>
 </html>

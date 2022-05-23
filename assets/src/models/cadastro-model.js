@@ -1,0 +1,88 @@
+class Model {
+
+  constructor() {
+        this.nome = $('#inputName'),
+        this.email = $('#inputEmail1'),
+        this.cEmail = $('#inputEmail2'),
+        this.rg = $('#inputRg'),
+        this.cep = $('#inputCep'),
+        this.rua = $("#inputAddress"),
+        this.bairro = $("#inputBairro"),
+        this.cidade = $("#inputCity"),
+        this.estado = $("#inputState"),
+        this.senha1 = $('#inputPassword1')
+        this.senha2 = $('#inputPassword2')
+        this.msg = ''
+       
+  }
+
+
+  viaCep(cep) {
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
+    
+       fetch(url).then((response) =>            
+            response.json()
+        ).then((data) => {
+           view.cep(data)
+        })
+    }
+
+    validaCep() {
+    const cep = this.cep.val();
+    try {
+      const regex = /^[0-9]{5}-?[0-9]{3}$/;
+      if (cep.match(regex)) {
+        this.viaCep(cep);
+      } else if (cep == '') {
+        this.msg = 'Digite um CEP'
+        return 'invalid'
+      } else {
+        throw new Error("Digite um CEP Válido");
+      }
+    } catch (erro) {
+      this.msg = erro
+      return 'invalid'
+    }
+  }
+
+  verificaNome(nome) {
+        if(nome == '' || nome.length < 5) {
+            return 'invalid'
+        } else {
+            return 'valid'
+        }
+  }
+
+  validaEmail (email) {
+    const rgx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    if(email.match(rgx)) {
+      return 'valid'
+    } else if (email == ''){
+      return ''
+    }else {return 'invalid'}  
+    
+  }
+
+  validaRG (rg) {
+    const valid = /^[0-9]{8}-?[0-9]{1}$/;
+    if(rg.match(valid)) {
+      return 'valid'
+    } else if(rg == ''){
+      return ''
+    } else {
+      return 'invalid'
+    }
+  } 
+
+  senhas(val1, val2) {
+    if(val1 != val2) {
+      console.log('foi')
+      this.msg = 'Senhas não coincidem'
+      return 'invalid'
+    } else {      
+      return 'valid'
+    }
+  }
+
+
+}
