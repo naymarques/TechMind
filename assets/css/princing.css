@@ -19,7 +19,7 @@ html {
   min-width: 220px;
 }
 
-.teste{
+.card-align{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
