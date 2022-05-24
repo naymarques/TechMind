@@ -9,3 +9,13 @@
     flex-direction: row;
     justify-content: center;
 }
+
+.glass-efect{
+    background: rgba(70, 54, 89, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(70, 54, 89, 2);
+    margin-top: 5px;
+}
