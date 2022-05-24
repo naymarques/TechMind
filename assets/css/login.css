@@ -1,29 +1,23 @@
-
-/* 
-body {
-    background-image: url("../images/background_slide.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #202020;
-   } */
-
 .formulario-login{
     max-width: 500px;
+    min-height: 400px;
     
 }
 
-/* .nav-marg{
-    margin-left: 10px;
-    margin-right: 10px;
+.tam-font{
+    font-size: 10pt;
 }
 
-.bg-nav{
-    background-color: #202020;
+.botao{
+    width: 100px;
+    background-color: #1A052A;
+    border: 1px solid rgba(70, 54, 89, 2);
 }
 
-.cores-letras-nav{
-    color: white;
-} */
+.botao:hover{
+    background-color: #310749;
+    border: 1px solid rgba(70, 54, 89, 2);
+}
 
 .glass-efect{
     background: rgba(70, 54, 89, 0.32);
@@ -31,6 +25,6 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.6px);
     -webkit-backdrop-filter: blur(6.6px);
-    border: 1px solid rgba(70, 54, 89, 0.31);
+    border: 1px solid rgba(70, 54, 89, 2);
     margin-top: 5px;
 }
