@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-logo {
+    font-size: 1.8rem;
+}
+
+.img-carousel {
+    height: 500px;
+    object-fit: cover;
+}
+
+.img-carousel3 {
+    height: 500px;
+    object-fit: cover;
+    object-position: 0 80%;
+}

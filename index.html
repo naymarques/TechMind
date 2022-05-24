@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMind - Inovação em seleção de pessoas e Recruit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link href="./assets/css/headerFooter.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="./assets/css/cover.css" rel="stylesheet" />
   </head>
 
   
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-nav ">
+  <body>
+    <header class="">
+      <nav class="navbar navbar-expand-lg navbar-light bg-nav">
         <div class="container-fluid nav-marg">
-          <a class="navbar-brand" href="/index.html">
+          <a class="navbar-brand logo" href="/index.html">
             <img src="/assets/images/T.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+            <h3 class=" d-inline text-white titulo-logo">echmind</h3>
           </a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end nav-marg" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse nav-marg" id="navbarNavAltMarkup">
           <div class="navbar-nav cores-letras-nav">
-            <a class="nav-item nav-link active text-white" href="/index.html">Home <span class="sr-only"></span></a>
+            <a class="nav-item nav-link text-white active" href="/index.html">Home <span class="sr-only"></span></a>
             <a class="nav-item nav-link text-white" href="./assets/pages/cadastro.html">Cadastro</a>
             <a class="nav-item nav-link text-white" href="./assets/pages/pricing.html">Planos</a>
             <a class="nav-item nav-link text-white" href="">Contato</a>
-            <a class="nav-item nav-link text-white" data-toggle="modal" data-target="#exampleModal"
-              href="./assets/pages/login.html">Login</a>
+            <a class="nav-item nav-link text-white btn btn-primary px-3" href="./assets/pages/login.html" role="button">Login</a>
+            <!-- <button type="button" class="nav-item nav-link btn btn-secondary px-3" data-toggle="modal" data-target="#exampleModal"><a class="text-white" href="./assets/pages/login.html">Login</a></button> -->
           </div>
         </div>
       </nav>
     </header>
 
 
-      <!-- <main class="">
-        <h1 class="display-5">MindTech</h1>
-        <h2 class="display-6">
-          Somos uma empresa especializada em carreiras de Tecnologia. Nosso
-          maior objetivo é que seu futuro profissional seja brilhante, bem
-          remunerado, alinhado com os seus sonhos e ideais.
-        </h2>
-        <p class="lead">
-          <a
-            href="#"
-            class="btn btn-lg btn-secondary fw-bold border-white bg-white cor-botao"
-            >Learn more</a
-          >
-        </p>
-      </main> -->
+    <main>
+      <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/scott-graham-5fNmWej4tAA-unsplash.jpg" class="d-block w-100 img-carousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/alexandru-acea-XEB8y0nRRP4-unsplash.jpg" class="d-block w-100 img-carousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg" class="d-block w-100 img-carousel3" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <section class="text-white">
+        <h2 class="p-5">Somos uma empresa especializada em carreiras de Tecnologia.</h2>
+        <h3 class="mb-5">Nosso maior objetivo é que seu futuro profissional seja brilhante, bem remunerado, alinhado com os seus sonhos e ideais.</h3>
+        
+      </section>
+        
+    </main>
 
     
 
 
-    <footer class="text-center text-lg-start bg-nav text-muted mt-auto fixed-bottom">
-      <section class=" text-white">
+    <footer class="text-center text-lg-start bg-nav text-muted mt-auto">
+      <section class=" text-white p-1">
         <div class="container text-center text-md-start mt-5">
           
           <div class="row mt-3">
@@ -100,11 +129,11 @@
               </h6>
               <a href="/assets/pages/cadastro.html"><button type="button" onclick="" class="btn btn-primary">Cadastro</button></a></div>
             </div>
-      </section>
-      <div class="text-center p-4  text-white" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2022 Front-Enders
-        <p class="text-reset fw-bold">Projeto para fins educacionais. Todos os direitos reservados</p>
-      </div>
+            <div class="text-center p-4 w100 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2022 Front-Enders
+              <p class="text-reset fw-bold">Projeto para fins educacionais. Todos os direitos reservados</p>
+            </div>
+      </section>      
     </footer>
   </body>
 </html>
