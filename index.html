@@ -1,51 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.98.0" />
-    <title>Cover Template · Bootstrap v5.2</title>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="./assets/css/cover.css" rel="stylesheet" />
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div>
-          <h3 class="float-md-start mb-0">Cover</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a
-              class="nav-link fw-bold py-1 px-0 active"
-              aria-current="page"
-              href="#"
-              >Home</a
-            >
-            <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-          </nav>
-        </div>
-      </header>
 
-      <main class="px-5 w-100 h-80">
+  
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-nav ">
+        <div class="container-fluid nav-marg">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/assets/images/T.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end nav-marg" id="navbarNavAltMarkup">
+          <div class="navbar-nav cores-letras-nav">
+            <a class="nav-item nav-link active text-white" href="/index.html">Home <span class="sr-only"></span></a>
+            <a class="nav-item nav-link text-white" href="./assets/pages/cadastro.html">Cadastro</a>
+            <a class="nav-item nav-link text-white" href="./assets/pages/pricing.html">Planos</a>
+            <a class="nav-item nav-link text-white" href="">Contato</a>
+            <a class="nav-item nav-link text-white" data-toggle="modal" data-target="#exampleModal"
+              href="./assets/pages/login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+      <!-- <main class="">
         <h1 class="display-5">MindTech</h1>
         <h2 class="display-6">
           Somos uma empresa especializada em carreiras de Tecnologia. Nosso
@@ -59,30 +49,62 @@
             >Learn more</a
           >
         </p>
-      </main>
+      </main> -->
 
-      <footer class="mt-auto text-white-50">
-        <p>
-          Cover template for
-          <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
-          by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.
-        </p>
-      </footer>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous"
-    ></script>
+    
+
+
+    <footer class="text-center text-lg-start bg-nav text-muted mt-auto fixed-bottom">
+      <section class=" text-white">
+        <div class="container text-center text-md-start mt-5">
+          
+          <div class="row mt-3">
+            <br>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Nossa página
+              </h6>
+              <p>
+                <a href="/index.html" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="./cadastro.html" class="text-reset">Cadastro</a>
+              </p>
+              <p>
+                <a href="./princing.html" class="text-reset">Planos</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Contato</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Nossa equipe
+              </h6>
+              <p>
+                <a href="https://www.linkedin.com/in/nayara-menezes98/" class="text-reset">Nayara Menezes</a>
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/nayara-marques-65884bb2/" class="text-reset">Nayara Marques</a>
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/rachelle-santolin/" class="text-reset">Rachelle Santolin</a>
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/romulo-omiranda/" class="text-reset">Rômulo Miranda</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Faça seu cadastro:
+              </h6>
+              <a href="/assets/pages/cadastro.html"><button type="button" onclick="" class="btn btn-primary">Cadastro</button></a></div>
+            </div>
+      </section>
+      <div class="text-center p-4  text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Front-Enders
+        <p class="text-reset fw-bold">Projeto para fins educacionais. Todos os direitos reservados</p>
+      </div>
+    </footer>
   </body>
 </html>
