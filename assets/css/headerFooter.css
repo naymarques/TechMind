@@ -1,18 +1,16 @@
-
-/* 
 body {
     background-image: url("../images/background_slide.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #202020;
-   } */
+   }
 
 .formulario-login{
     max-width: 500px;
     
 }
 
-/* .nav-marg{
+.nav-marg{
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -23,14 +21,4 @@ body {
 
 .cores-letras-nav{
     color: white;
-} */
-
-.glass-efect{
-    background: rgba(70, 54, 89, 0.32);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.6px);
-    -webkit-backdrop-filter: blur(6.6px);
-    border: 1px solid rgba(70, 54, 89, 0.31);
-    margin-top: 5px;
 }
