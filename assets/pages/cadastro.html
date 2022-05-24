@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous" defer></script>
+    <link href="../css/headerFooter.css" rel="stylesheet">
     <script src="../src/models/cadastro-model.js" defer></script>
     <script src="../src/views/cadastro-view.js" defer></script>
     <script src="../src/controllers/cadastro-controller.js" defer></script>
@@ -16,11 +17,11 @@
   </head>
   
 <body>    
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-nav ">
+  <header class="w-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav">
       <div class="container-fluid nav-marg">
         <a class="navbar-brand" href="/index.html">
-          <img src="../images/T.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+          <img src="/assets/images/T.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -30,22 +31,23 @@
       <div class="collapse navbar-collapse justify-content-end nav-marg" id="navbarNavAltMarkup">
         <div class="navbar-nav cores-letras-nav">
           <a class="nav-item nav-link active text-white" href="/index.html">Home <span class="sr-only"></span></a>
-          <a class="nav-item nav-link text-white" href="./cadastro.html">Cadastro</a>
-          <a class="nav-item nav-link text-white" href="./princing.html">Planos</a>
-          <a class="nav-item nav-link text-white" href="./contato.html">Contato</a>
+          <a class="nav-item nav-link text-white" href="../pages/cadastro.html">Cadastro</a>
+          <a class="nav-item nav-link text-white" href="../pages/pricing.html">Planos</a>
+          <a class="nav-item nav-link text-white" href="">Contato</a>
           <a class="nav-item nav-link text-white" data-toggle="modal" data-target="#exampleModal"
-            href="/assets/pages/login.html">Login</a>
+            href="./assets/pages/login.html">Login</a>
         </div>
       </div>
     </nav>
   </header>
+  
 
     <section class="cadastro row m-5">
       <!-- justify-content-md-center /  -->
 
       <div class="image col-md-8">
         <img class="imagem" src="../images/forms.webp" alt="Conheça nossos planos">
-        <p class="p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam illum nostrum reiciendis exercitationem consequatur perspiciatis nobis neque numquam soluta consectetur harum a architecto iste sint accusantium voluptate nihil, quos eaque!</p>
+        <h3 class="p-5 text-white">Cadastre-se agora, e escolha um dos nossos planos e comece já a sua capacitação para ingressar no mercado de trabalho da melhor forma!</h3>
       </div>
 
       <div class="forms col-md-4 border rounded-3">
@@ -154,6 +156,13 @@
         </form>
       </div>    
     </section>
+
+    <footer class="text-center text-lg-start bg-nav text-muted mt-auto">
+      <div class="text-center p-2 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Front-Enders
+        <p class="text-reset fw-bold">Projeto para fins educacionais. Todos os direitos reservados</p>
+      </div>
+    </footer>
 
     
     
