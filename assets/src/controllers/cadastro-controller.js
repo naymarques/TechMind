@@ -58,12 +58,12 @@ class Controller {
     })
 
     //Eventos que comparam as senhas e imprimem na tela
-    jQuery(model.senha1).blur(() => {
+    jQuery(model.senha1).change(() => {
         model.toEqual(model.senha1, model.senha2)
         controller.comparaView()
     })
 
-    jQuery(model.senha2).blur(() => {
+    jQuery(model.senha2).keyup(() => {
         model.toEqual(model.senha1, model.senha2)
         controller.comparaView()
     })
