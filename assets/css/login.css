@@ -1,10 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+
+body {
+    background-image: url("../images/background_slide.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #202020;
+   }
 
 .formulario-login{
     max-width: 500px;
     
+}
+
+.nav-marg{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bg-nav{
+    background-color: #202020;
+}
+
+.cores-letras-nav{
+    color: white;
 }
