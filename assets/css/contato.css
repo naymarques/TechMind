@@ -1,0 +1,34 @@
+.img-carrossel {
+    object-fit: cover;
+    object-position: 0 60%;
+    height: 400px;
+}
+
+.cor-especial{
+    color: darkred!important;
+}
+
+.botao-cor-especial{
+    background-color: darkred;
+    color: white;
+    border-color: darkred;
+}
+
+.borda-cor-especial{
+    border: 1px solid rgba(70, 54, 89, 2);
+}
+
+.img-posicao-card {
+    object-fit: cover;
+     object-position: 0 20%; 
+    height: 200px;
+}
+
+.img-posicao-card2 {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-largura {    
+    max-width: 18rem;
+}

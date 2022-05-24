@@ -19,3 +19,14 @@
     border: 1px solid rgba(70, 54, 89, 2);
     margin-top: 5px;
 }
+
+.botao{
+    width: 100px;
+    background-color: #1A052A;
+    border: 1px solid rgba(70, 54, 89, 2);
+}
+
+.botao:hover{
+    background-color: #310749;
+    border: 1px solid rgba(70, 54, 89, 2);
+}
