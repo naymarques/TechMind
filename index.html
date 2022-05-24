@@ -1,567 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.98.0" />
+    <title>Cover Template · Bootstrap v5.2</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECH Circle</title>
-    <link rel="icon" href="view/images/nav_footer/icon.png">
-    <link rel="stylesheet" href="css/reset.css">
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/cover/"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/1ace605db6.js" crossorigin="anonymous"></script>
+    <link
+      href="/docs/5.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
-    <script src="view/js/home_slides.js" defer></script>
-    <script src="view/js/home_slides_textos.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="view/css/home_main.css">
-    <link rel="stylesheet" href="view/css/home_equipe.css">
-    <link rel="stylesheet" href="view/css/home_footer.css">
-    <link rel="stylesheet" href="view/css/home_slides.css">
-    <link rel="stylesheet" href="view/css/navbar.css">
-</head>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="/docs/5.2/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.2/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.2/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg"
+      color="#712cf9"
+    />
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico" />
+    <meta name="theme-color" content="#712cf9" />
 
-<body>
-    <img id="backSlide" src="view/images/background_slide.png">
-    <div id="displayDots"></div>
-    <img class="background" src="view/images/background_home.png">
-    <section>
-        <div class="ml-4" id="logo">
-            <div id="logoHover"></div>
-            <div class="logoImg"><img src="view/images/nav_footer/logo.png"></div>
-            <div id="logoNome"><img id="george" src=""></div>
-            <div class="logoImg" id="logoR"><img src=""></div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">Cover</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a
+              class="nav-link fw-bold py-1 px-0 active"
+              aria-current="page"
+              href="#"
+              >Home</a
+            >
+            <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+          </nav>
         </div>
-        <div class="navBar">
-            <nav class="navbar navbar-expand-lg mt-2">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                    </ul>
-                    <div class="nav-item">
-                        <a class="nav-link mr-sm-5 my-2 aNav" href="#posts">Home</a>
-                    </div>
-                    <div class="nav-item">
-                        <a class="nav-link mr-sm-5 my-2 aNav" href="#blog">Sobre Nós</a>
-                    </div>
-                    <div class="nav-item">
-                        <a class="nav-link mr-sm-5 my-2 aNav" href="#team">Features</a>
-                    </div>
-                    <div class="nav-item">
-                        <button type="button" class="btn btnConf nav-link mr-sm-4 my-2 px-4 aNav"
-                            onclick="location.href='view/html/login.html'">Entrar</button>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
-    <section>
-        <div class="w-100 display1">
-            <div class="px-3 displayDiv">
-                <h1 class="mb-2">Encontre o profissional <br>dos seus sonhos aqui na TECH Circle.</h1>
-                <p class="my-3 mb-5 desc">Você está cansado de fazer processos seletivos e ter que responder
-                questionários inuteis e<br>
-                    <span>contratar um profissional só se baseando em questionários que não são eficazes? Vem conhecer a MindCode.</span></br></br>
-                    <button type="button" class="btn px-5 py-3 btnConf"
-                        onclick="location.href='view/html/cadastro.html'">Conheça agora!</button>
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="bg-light pt-5">
-        <div class="about-cards-section cards">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 card-wrapper">
-                        <div class="card border-0">
-                            <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image"
-                                style="width:175px; height:175px;">
-                                <img class="w-100 h-100"
-                                    src="view/images/ideia.png"
-                                    alt="Card image cap">
-                            </div>
-                            <div class="card-body text-center mt-4">
-                                <h3 class="text-uppercase card-titulo">NEWS</h3>
-                                <p class="card-texto">Mantenha-se atualizado de tudo relacionado ao mundo Tech e
-                                    recrutamentos semanais!</p>
-                            </div>
-                        </div>
-                    </div>
+      </header>
 
-                    <div class="col-sm-4 card-wrapper">
-                        <div class="card border-0">
-                            <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image"
-                                style="width:175px; height:175px">
-                                <img class="w-100 h-100"
-                                    src="view/images/oportunidades.png"
-                                    alt="Card image cap">
-                            </div>
-                            <div class="card-body text-center mt-4">
-                                <h3 class="text-uppercase card-titulo">OPORTUNIDADES</h3>
-                                <p class="card-texto">Acompanhe a nossa empresa para dicas e cursos para turbinar seu portfólio, tudo para te
-                                    ajudar a conquistar sua tão desejada vaga</p>
-                            </div>
-                        </div>
-                    </div>
+      <main class="px-3">
+        <h1>Cover your page.</h1>
+        <p class="lead">
+          Cover is a one-page template for building simple and beautiful home
+          pages. Download, edit the text, and add your own fullscreen background
+          photo to make it your own.
+        </p>
+        <p class="lead">
+          <a
+            href="#"
+            class="btn btn-lg btn-secondary fw-bold border-white bg-white"
+            >Learn more</a
+          >
+        </p>
+      </main>
 
-                    <div class="col-sm-4 card-wrapper">
-                        <div class="card border-0">
-                            <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image "
-                                style="width:175px; height:175px">
-                                <img class="w-100 h-100" 
-                                    src="view/images/planos.png"
-                                    alt="Card image cap">
-                            </div>
-                            <div class="card-body text-center mt-4">
-                                <h3 class="text-uppercase card-titulo">CONFIRA NOSSOS PLANOS!</h3>
-                                <p class="card-texto">Confira nossa assinatura premium para ter acesso a conteúdos
-                                    selecionados como cursos, anexos exclusivos e acesso ao grupo de membros</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-100" style="text-align:center">
-                        <h5 class="section-title h1">Ultimos posts</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="posts">
-        <div id="displaySlide" onclick="slide()">
-            <div id="areaSlides">
-                <div class="slides">
-                    <div class="slides main"
-                        style="background-image: url(view/images/blog/gif_dance.gif); background-size: cover;">
-                    </div>
-
-                    <div class="slides sec"
-                        style="background-image: url(view/images/blog/metaverso.jpg); background-size: cover;">
-                    </div>
-
-                    <div class="slides thd"
-                        style="background-image: url(view/images/blog/net30.jpg); background-size: cover;">
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="areaTexto">
-                <div id="slideTexto">
-                    <h1 id="slideH1">DE OLHOS FECHADOS</h1>
-                    <h5 id="slideH6" style="line-height:2">Nós iremos encontrar os melhores profissionais
-                        para o cargo desejado para a sua empresa, todos eles serão responsáveis por
-                        resultados pensados, eficazes e prontos para sair daqui
-                        em uma linda parceria com você.
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!--- ultimos posts--->
-
-    <section class="pt-5 pb-5 bg-light" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h3 class="section-title h1">E Mais!</h3>
-                </div>
-
-                <div class="col-6 text-right">
-                    <a class="btn btnConf mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
-                    <a class="btn btnConf mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
-                </div>
-                <div class="col-12">
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/react1.jpeg">
-                                            <div class="card-body">
-                                                <h4 class="card-titulo">Fundamentos do React</h4>
-                                                <p class="card-texto">Neste capítulo abordaremos alguns conceitos
-                                                    fundamentais do React... </p>
-                                                <button type="button" class="btn btnConf" onclick=" leia()">leia
-                                                    mais</button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/dev_ext.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-titulo">Devs Exterior</h4>
-                                                <p class="card-texto">Fala pessoal, hoje vamos abordar como é trabalhar
-                                                    no exterior na area tech...</p>
-                                                <button type="button" class="btn btnConf">leia mais</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/fW.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-titulo">Frameworks do Momento</h4>
-                                                <p class="card-texto">Você saberia responder quais frameworks estão em
-                                                    alta em 2022?...</p>
-                                                <button type="button" class="btn btnConf">leia mais</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/IA.jpeg">
-                                            <div class="card-body">
-                                                <h4 class="card-titulo">A Tecnologia da Alexa</h4>
-                                                <p class="card-texto">Conheça a tecnologia da assistente de voz da
-                                                    Amazon...</p>
-                                                <button type="button" class="btn btnConf">leia mais</button>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/equipe.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-titulo">Trabalho em Equipe</h4>
-                                                <p class="card-texto">Afinal, porquê o trabalho em equipe é tão
-                                                    importante?...</p>
-                                                <button type="button" class="btn btnConf">leia mais</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/github.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-titulo">GIT e GITHUB</h4>
-                                                <p class="card-texto">Dicas valiosas para versionamento de codigo...</p>
-                                                <button type="button" class="btn btnConf">leia mais</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/bug.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-titulo">Não Funciona!</h4>
-                                                <p class="card-texto">Vejas quais principais boas práticas que minimizam
-                                                    erros...</p>
-                                                <button type="button" class="btn btnConf">leia mais</button>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/descanso.jpeg">
-                                            <div class="card-body">
-                                                <h4 class="card-titulo">Dando aquela pausa</h4>
-                                                <p class="card-texto">Não pira! O descanso é muito importante no seu
-                                                    desempenho...</p>
-                                                <button type="button" class="btn btnConf">leia mais</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/in.jpeg">
-                                            <div class="card-body">
-                                                <h4 class="card-titulo">Linkedin, como ser visto?</h4>
-                                                <p class="card-textoo">Entenda a impotancia de deixar essa rede sempre
-                                                    atualizada..</p>
-                                                <button type="button" class="btn btnConf">leia mais</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--- ultimos posts--->
-
-    <!---nay team-->
-    <section id="team" class="pb-5">
-        <div class="container">
-            <h5 class="section-title h1">Nosso Time</h5>
-            <div class="row vRow">
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip">
-                        <div class="mainflip flip-0">
-                            <div class="frontside">
-                                <div class="card"  style="border-radius:20px;">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="view/images/equipe/nayara.jpg"
-                                                alt="card image"></p>
-                                        <h4 class="card-title">Nayara Menezes</h4>
-                                        <p class="card-texto">De Customer Success, Criadora de Conteúdo a Programadora.</p>
-                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Nay Menezes,</h4>
-                                        <p class="card-texto">Apaixonada por UX e programação. Toda dificuldade pra ela se torna um desafio, não tem essa de não vou conseguir para a Nay, tudo é possível.</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://github.com/menezesnay">
-                                                    <i class="fa fa-github"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/nayara-menezes98/">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card"style="border-radius:20px;">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="view/images/equipe/rachelle.jpg"
-                                                alt="card image"></p>
-                                        <h4 class="card-title">Rachelle Santolin</h4>
-                                        <p class="card-texto">UHUHUHUHUHU...!!
-                                        </p>
-                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Rachelle,</h4>
-                                        <p class="card-texto">Nossa desenvolvedora Full Stack e colunista do Blog do
-                                            Georg Dev, sempre empenhada, não dá menos que o seu melhor para qualquer
-                                            projeto. Adora uma aulinha de soft pra colocar as fofocas em dia.</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://github.com/rachellesdev">
-                                                    <i class="fa fa-github"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/rachelle-santolin/">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card" style="border-radius:20px;">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="view/images/equipe/romulo.jpg" alt="card image">
-                                        </p>
-                                        <h4 class="card-title">Rômulo Miranda</h4>
-                                        <p class="card-textoo">DEMONIO QUE ATRAPALHA AS AULAS, ja pode ir
-                                            embora?</p>
-                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Rômulo M,</h4>
-                                        <p class="card-texto">Tem 1,93 de altura, é o dev mais alto da América do Sul.
-                                            Gosta muito de mexer com cor, layout estilo e tudo que se liga à isso. É
-                                            front-end que fala né?</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://github.com/romulo-m">
-                                                    <i class="fa fa-github"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/romulo-omiranda/">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card" style="border-radius:20px;">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="view/images/equipe/nayara2.jpg" alt="card image">
-                                        </p>
-                                        <h4 class="card-title">Nayara Marques</h4>
-                                        <p class="card-texto">Back-End? Front-End? ou Full-Stack?</p>
-                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Nay Marques,</h4>
-                                        <p class="card-texto">
-                                            GEMEA.
-                                        </p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://github.com/naymarques">
-                                                    <i class="fa fa-github"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/nayara-marques-65884bb2/">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-</body>
-
-<footer>
-    <div id="fooLista">
-
-        <ul>
-            <li>
-                <h4>Inicio</h4>
-            </li>
-            <li><a href='view/html/cadastro.html'>Cadastro</a></li>
-            <li><a href="#posts">Posts</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#team">Nosso time</a></li>
-        </ul>
-
-        <ul class="fooUl">
-            <li>
-                <h4>Equipe</h4>
-            </li>
-            <li><a href="https://www.linkedin.com/in/nayara-menezes98/">Nayara Menezes</a></li>
-            <li><a href="https://www.linkedin.com/in/rachelle-santolin/">Rachelle Santolin</a></li>
-            <li><a href="https://www.linkedin.com/in/romulo-omiranda/">Rômulo Miranda</a></li>
-            <li><a href="https://www.linkedin.com/in/nayara-marques-65884bb2/">Nayara Marques</a></li>
-        </ul>
-
-        <ul>
-            <li>
-                <h4>Suporte</h4>
-            </li>
-            <li><i class="fas fa-comment-alt"></i> Chat online</i></li>
-            <li><i class="fas fa-envelope"></i> E-mail</i></li>
-            <li><i class="fas fa-phone-alt"></i> Telefones</i></li>
-            <li><i class="fas fa-home"></i> Endereços</i></li>
-        </ul>
-
+      <footer class="mt-auto text-white-50">
+        <p>
+          Cover template for
+          <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
+          by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.
+        </p>
+      </footer>
     </div>
-
-    <div id="fooContato">
-        <div id="fooIcons">
-            <i class="fab fa-instagram fa-3x"></i>
-            <i class="fab fa-facebook fa-3x"></i>
-            <i class="fab fa-linkedin fa-3x"></i>
-        </div>
-
-        <button type="button" class="btn btnConf" id="fooBtn">Contato</button>
-    </div>
-
-    <div id="fooLogoB">
-        <img src="view/images/nav_footer/logo2.png" id="fooLogo">
-    </div>
-</footer>
-<div id="fooCopy">
-    <p>&copy; 2022 Copyright - Front-Enders Resilia Educação - Projeto Mod. 2</p>
-</div>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
