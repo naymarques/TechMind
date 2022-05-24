@@ -60,5 +60,5 @@
 
 .background{
   background-size: cover;
-  background-image: url(/assets/images/background_slide.png);
+  background-image: url(./assets/images/background_slide.png);
 }
