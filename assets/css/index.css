@@ -14,14 +14,17 @@
 }
 
 .img-carousel {
-    height: 500px;
+    height: 600px;
     object-fit: cover;
 }
 
-.img-carousel3 {
-    height: 500px;
-    object-fit: cover;
-    object-position: 0 80%;
+.img-about {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem {
+    width: 70%;
 }
 
 .btn-size {
@@ -29,9 +32,7 @@
 }
 
 .size-div-sec1 {
-    margin-top: 150px;
-    margin-bottom: 150px;
-    padding-left: 50px;
+    padding: 5rem;
 }
 
 .div-card-bg {
