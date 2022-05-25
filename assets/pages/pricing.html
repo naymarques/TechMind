@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="imagex/png" href="../images/T.svg">
     <title>TechMind</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -10,9 +11,9 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-
     <!-- Custom styles for this template -->
-    <link href="../css/princing.css" rel="stylesheet" />
+    <link href="../css/pricing.css" rel="stylesheet" />
+    <link href="../css/headerFooter.css" rel="stylesheet" />
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
@@ -24,312 +25,275 @@
       </symbol>
     </svg>
 
-    <section class="container py-3">
-      <header>
-        <section
-          class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"
-        >
-          <a
-            href="/index.html"
-            class="d-flex align-items-center text-dark text-decoration-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="32"
-              class="me-2"
-              viewBox="0 0 118 94"
-              role="img"
-            >
-              <title>TechMind</title>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-                fill="currentColor"
-              ></path>
-            </svg>
-            <span class="fs-4">TechMind</span>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+        <div class="container-fluid nav-marg">
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="../images/T.png"
+              alt=""
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+            />
           </a>
-
-          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a
-              class="me-3 py-2 text-dark text-decoration-none"
-              href="/index.html"
-              >Início</a
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end nav-marg"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav cores-letras-nav">
+            <a class="nav-item nav-link active text-white" href="/index.html"
+              >Home <span class="sr-only"></span
+            ></a>
+            <a class="nav-item nav-link text-white" href="./cadastro.html"
+              >Cadastro</a
             >
-            <a
-              class="me-3 py-2 text-dark text-decoration-none"
-              href="../pages/contatos.html"
-              >Sobre nós</a
-            >
-            <a
-              class="me-3 py-2 text-dark text-decoration-none"
-              href="../pages/login.html"
-              >Login</a
-            >
-            <a class="py-2 text-dark text-decoration-none" href="princing.html"
+            <a class="nav-item nav-link text-white" href="./pricing.html"
               >Planos</a
             >
-          </nav>
-        </section>
-
-        <section class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal">Nossos planos</h1>
-          <p class="fs-5 text-muted">
-            Escolha o plano que melhor se encaixa no seu momento profissional e
-            no seu projeto de carreira.
-          </p>
-        </section>
-      </header>
-
-      <main>
-        <section class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <section class="col">
-            <section class="card mb-4 rounded-3 shadow-sm h-100">
-              <section class="card-header py-3">
-                <h4 class="my-0 fw-normal">Free</h4>
-              </section>
-              <section class="card-body card-align">
-                <h1 class="card-title pricing-card-title">
-                  R$0<small class="text-muted fw-light">/ano</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-6">
-                  <li>Comunidade TechMind no Discord</li>
-                  <li>10 aulas gratuitas de uma trilha específica</li>
-                </ul>
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  <a href="../pages/cadastro.html"> Acesso grátis!</a>
-                </button>
-              </section>
-            </section>
-          </section>
-          <section class="col">
-            <section class="card mb-4 rounded-3 shadow-sm h-100">
-              <section class="card-header py-3">
-                <h4 class="my-0 fw-normal">Premium</h4>
-              </section>
-              <section class="card-body card-align">
-                <h1 class="card-title pricing-card-title">
-                  R$399<small class="text-muted fw-light">/ano</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-6">
-                  <li>Comunidade TechMind no Discord</li>
-                  <li>Todas as aulas da trilha de carreira escolhida</li>
-                  <li>Ajuda especialista em carreira tech (1:1)</li>
-                  <li>1 ano de acesso</li>
-                </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  <a href="../pages/cadastro.html"> Assine o Premium!</a>
-                </button>
-              </section>
-            </section>
-          </section>
-          <section class="col">
-            <section class="card mb-4 rounded-3 shadow-sm h-100">
-              <section
-                class="card-header py-3 text-white bg-primary border-primary"
-              >
-                <h4 class="my-0 fw-normal">Pro</h4>
-              </section>
-              <section class="card-body card-align">
-                <h1 class="card-title pricing-card-title">
-                  R$799<small class="text-muted fw-light">/ano</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-6">
-                  <li>Comunidade TechMind no Discord</li>
-                  <li>Todas as aulas da plataforma</li>
-                  <li>1 ano de acesso</li>
-                  <li>Acompanhamento de um especialista em carreira tech</li>
-                  <li>Reuniões periódicas de feedback (1:1)</li>
-                  <li>Consultoria especial para entrevistas em inglês.</li>
-                </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  <a href="../pages/cadastro.html"> Assine o Pro!</a>
-                </button>
-              </section>
-            </section>
-          </section>
-        </section>
-
-        <h2 class="display-6 text-center mb-4">Compare os planos</h2>
-
-        <section class="table-responsive">
-          <table class="table text-center">
-            <section>
-              <tr>
-                <th style="width: 34%"></th>
-                <th style="width: 22%">Free</th>
-                <th style="width: 22%">Premium</th>
-                <th style="width: 22%">Pro</th>
-              </tr>
-            </section>
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">
-                  Acesso a Comunidade Techmind no Discord
-                </th>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">
-                  Acesso a todas as aulas de uma trilha específica
-                </th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">
-                  Acesso de 1 ano a plataforma
-                </th>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">
-                  Reunião 1:1 com especialista em carreira tech
-                </th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">
-                  Reuniões periódicas de feedback
-                </th>
-                <td></td>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">
-                  Consultoria especial para entrevistas em inglês.
-                </th>
-                <td></td>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </main>
-
-      <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <section class="row">
-          <section class="col-12 col-md">
-            <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
-          </section>
-          <section class="col-6 col-md">
-            <h5>Início</h5>
-            <ul class="list-unstyled text-small">
-              <li class="mb-1">
-                <a
-                  class="link-secondary text-decoration-none"
-                  href="/index.html"
-                  >Last time</a
-                >
-              </li>
-            </ul>
-          </section>
-          <section class="col-6 col-md">
-            <h5>Sobre nós</h5>
-            <ul class="list-unstyled text-small">
-              <li class="mb-1">
-                <a
-                  class="link-secondary text-decoration-none"
-                  href="./contatos.html"
-                  >Resource</a
-                >
-              </li>
-            </ul>
-          </section>
-          <section class="col-6 col-md">
-            <h5>Nossos Planos</h5>
-            <ul class="list-unstyled text-small">
-              <li class="mb-1">
-                <a
-                  class="link-secondary text-decoration-none"
-                  href="./princing.html"
-                  >Team</a
-                >
-              </li>
-            </ul>
-          </section>
-        </section>
-      </footer>
+            <a class="nav-item nav-link text-white" href="">Contato</a>
+            <a
+              class="nav-item nav-link text-white"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              href="/assets/pages/login.html"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="pricing-header pb-md-2 mx-auto text-center">
+      <h1 class="display-4 fw-normal text-white">Nossos planos</h1>
+      <p class="fs-5 text-white">
+        Escolha o plano que melhor se encaixa no seu momento profissional e no
+        seu projeto de carreira.
+      </p>
     </section>
+    <main>
+      <section
+        class="row row-cols-1 row-cols-md-3 mb-3 text-center p-3 text-white"
+      >
+        <section class="col">
+          <section class="card mb-4 rounded-3 shadow-sm h-100 glass-efect">
+            <section class="card-header py-3">
+              <h4 class="my-0 fw-normal">Free</h4>
+            </section>
+            <section class="card-body card-align">
+              <h1 class="card-title pricing-card-title">
+                R$0<small class="text-white fw-light">/ano</small>
+              </h1>
+              <br />
+              <ul class="list-unstyled mt-3 mb-6">
+                <li>Comunidade TechMind no Discord</li>
+                <br />
+                <li>10 aulas gratuitas de uma trilha específica</li>
+              </ul>
+              <br />
+              <button type="button" class="w-100 btn btn-lg btn-primary botao">
+                <a href="../pages/cadastro.html"> Acesso grátis!</a>
+              </button>
+            </section>
+          </section>
+        </section>
+        <section class="col">
+          <section class="card mb-4 rounded-3 shadow-sm h-100 glass-efect">
+            <section class="card-header py-3">
+              <h4 class="my-0 fw-normal">Premium</h4>
+            </section>
+            <section class="card-body card-align">
+              <h1 class="card-title pricing-card-title">
+                R$399<small class="text-white fw-light">/ano</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-6">
+                <br />
+                <li>Comunidade TechMind no Discord</li>
+                <li>Todas as aulas da trilha de carreira escolhida</li>
+                <li>Ajuda especialista em carreira tech (1:1)</li>
+                <li>1 ano de acesso</li>
+                <br />
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary botao">
+                <a href="../pages/cadastro.html"> Assine o Premium!</a>
+              </button>
+            </section>
+          </section>
+        </section>
+        <section class="col">
+          <section class="card mb-4 rounded-3 shadow-sm h-100 glass-efect">
+            <section class="card-header py-3 text-white tituloPro">
+              <h4 class="my-0 fw-normal">Pro</h4>
+            </section>
+            <section class="card-body card-align">
+              <h1 class="card-title pricing-card-title">
+                R$799<small class="text-white fw-light">/ano</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-6">
+                <li>Comunidade TechMind no Discord</li>
+                <li>Todas as aulas da plataforma</li>
+                <li>1 ano de acesso</li>
+                <li>Acompanhamento de um especialista em carreira tech</li>
+                <li>Reuniões periódicas de feedback (1:1)</li>
+                <li>Consultoria especial para entrevistas em inglês.</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary botao">
+                <a href="../pages/cadastro.html"> Assine o Pro!</a>
+              </button>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <h2 class="display-6 text-center text-white mb-4">Compare os planos</h2>
+
+      <section class="table-responsive p-5">
+        <table class="table text-center text-white">
+          <section>
+            <tr>
+              <th style="width: 34%"></th>
+              <th style="width: 22%">Free</th>
+              <th style="width: 22%">Premium</th>
+              <th style="width: 22%">Pro</th>
+            </tr>
+          </section>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">
+                Acesso a Comunidade Techmind no Discord
+              </th>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">
+                Acesso a todas as aulas de uma trilha específica
+              </th>
+              <td></td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">
+                Acesso de 1 ano a plataforma
+              </th>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">
+                Reunião 1:1 com especialista em carreira tech
+              </th>
+              <td></td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">
+                Reuniões periódicas de feedback
+              </th>
+              <td></td>
+              <td></td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">
+                Consultoria especial para entrevistas em inglês.
+              </th>
+              <td></td>
+              <td></td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="text-center text-lg-start bg-nav text-muted mt-auto">
+      <div
+        class="text-center p-4 text-white"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2022 Front-Enders
+        <p class="text-reset fw-bold">
+          Projeto para fins educacionais. Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/additional-methods.min.js"></script>
+    <script src="../js/messages_pt_BR.min.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>
