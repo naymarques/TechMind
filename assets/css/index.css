@@ -23,3 +23,7 @@
     object-fit: cover;
     object-position: 0 80%;
 }
+
+.btn-size{
+    width: 300px;
+}
