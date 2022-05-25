@@ -44,16 +44,26 @@
     margin-bottom: 150px;
 }
 
-.img-card-size {
-    height: 220px;
-    width: 220px;
-}
 
 .card-bg {
     background: rgba(255, 255, 255, 0.76);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(20px);
--webkit-backdrop-filter: blur(20px);
-border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    min-height: 500px;
+}
+
+.botao-card {
+    width: 100px;
+    background-color: #1A052A;
+    border: 1px solid rgba(70, 54, 89, 2);
+    color: white;
+}
+
+.botao-card:hover {
+    color: white;
+    background-color: #310749;
+    border: 1px solid rgba(70, 54, 89, 2);
 }
