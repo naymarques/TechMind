@@ -13,29 +13,3 @@ body {
 .forms {
     background-color: #c6c6c6;
 }
-
-/* .forms {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin-right: 10rem;
-}
-.cadastro {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-}
-
-.image {
-    display: flex;
-    justify-content: center;
-}*/
-
-/* .imagem {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    height: 90%;
-}  */

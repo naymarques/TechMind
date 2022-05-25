@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechMind - Inovação em seleção de pessoas e Recruit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/js/index.js" defer>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous" defer></script>
@@ -18,6 +19,8 @@
 
   
   <body>
+
+    <!-- Cabeçalho -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-nav">
         <div class="container-fluid nav-marg">
@@ -42,16 +45,48 @@
       </nav>
     </header>
 
-    <section>
-      <div class="w-100 display1 size-div-sec1">
-          <div class="px-3 displayDiv">
-              <h1 class="mb-2 text-white">Somos uma empresa especializada <br> em carreiras de Tecnologia.</h1>
-              <p class="my-3 mb-5 text-white"> Nosso maior objetivo é que seu futuro profissional seja brilhante, bem remunerado, alinhado com os seus sonhos e ideais.</br></br>
-                  <a type="button" class="btn btn-size botao" href="./assets/pages/pricing.html" role="button">Conheça agora!</a>
-              </p>
-          </div>
+    <!-- Carrosel -->
+    <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-  </section>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/images/teste1.png" class="d-block w-100 img-carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/teste2.png" class="d-block w-100 img-carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/teste3.png" class="d-block w-100 img-carousel" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+
+    <!-- Conheça-nos -->
+      <section class="w-100 display1 size-div-sec1 row">
+          <div class="px-3 displayDiv col-md-6">
+              <h1 class="mb-2 text-white mb-5">Somos uma empresa especializada <br> em carreiras de Tecnologia.</h1>
+              <h4 class="my-3 mb-5 text-white"> Nosso maior objetivo é que seu futuro profissional seja brilhante,<br> bem remunerado, alinhado com os seus sonhos e ideais.</br></br>
+                  <a type="button" class="btn btn-size botao mt-3" href="./assets/pages/pricing.html" role="button">Conheça agora!</a>
+              </h4>
+              <img src="./assets/images/group1.png" alt="groups" /><span class="my-3 mb-5 text-white">   + de 400 profissionais contratados</span>
+          </div>
+          <div class="col-md-6 img-about">
+            <img class="imagem img-fluid row" src="./assets/images/elipse.png" alt="Realidade virtual"/>         
+          </div>
+      </section>      
+  
   <section class=" div-card-bg pt-5">
     <div class="about-cards-section cards">
         <div class="container">

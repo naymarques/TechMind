@@ -69,14 +69,6 @@ class Controller {
     })
 
 
-//  if(model.senhas(model.senha1.val(), model.senha2.val()) == 'invalid') {
-//     view.print(model.senha1, 'invalid', $('#password'), model.msg)
-//     view.print(model.senha2, 'invalid', $('#password'), model.msg)
-// } else {
-//     view.print(model.senha1, 'valid')
-//     view.print(model.senha2, 'valid')
-// }
-
 
 
 
