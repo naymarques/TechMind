@@ -48,7 +48,7 @@ class Model {
   verificaNome(nome) {
         if (!nome){
             return ''
-        } else if(nome.length < 5) { 
+        } else if(nome.length < 10) { 
             return 'invalid'
         } else {        
             return 'valid'
@@ -56,7 +56,7 @@ class Model {
   }
 
   validaEmail (email) {
-    const rgx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    const rgx = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
     if(email.match(rgx)) {
       return 'valid'
     } else if (email == ''){
@@ -78,22 +78,14 @@ class Model {
 
   toEqual (val1, val2) {
     if(val1 != val2) {
-      return 'invalid'
+      this.comparaView()
+      return 'invalid'      
     } else if (val1 == val2) {
       return 'valid'
     } else {
       return ''
     }
   }
-
-  // senhas(val1, val2) {
-  //   if(val1 != val2) {
-  //     this.msg = 'Senhas não coincidem'
-  //     return 'invalid'
-  //   } else {
-  //     return 'valid'
-  //   }
-  // }
 
 
 }
