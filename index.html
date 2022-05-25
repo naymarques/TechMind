@@ -8,14 +8,19 @@
     <title>TechMind - Inovação em seleção de pessoas e Recruit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link href="./assets/css/headerFooter.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="./assets/css/cover.css" rel="stylesheet" />
+    <link href="./assets/css/home_main.css" rel="stylesheet" />
+    <link href="./assets/css/home_slides.css" rel="stylesheet" />
     <link rel="shortcut icon" type="imagex/png" href="./assets/images/T.svg">
+    <script src="./assets/js/home_slides.js" defer></script>
+    <script src="./assets/js/home_slides_textos.js" defer></script>
+    <script src="./assets/js/cadastro_display.js" defer></script>
   </head>
 
   
@@ -45,46 +50,264 @@
       </nav>
     </header>
 
+    <section>
+      <div class="w-100 display1">
+          <div class="px-3 displayDiv">
+              <h1 class="mb-2">Encontre o profissional <br>dos seus sonhos aqui na TECH Circle.</h1>
+              <p class="my-3 mb-5 desc">Você está cansado de fazer processos seletivos e ter que responder
+              questionários inuteis e<br>
+                  <span>contratar um profissional só se baseando em questionários que não são eficazes? Vem conhecer a Tech Circle.</span></br></br>
+                  <button type="button" class="btn px-5 py-3 btnConf"
+                      onclick="location.href='view/html/cadastro.html'">Conheça agora!</button>
+              </p>
+          </div>
+      </div>
+  </section>
+  <section class="bg-light pt-5">
+    <div class="about-cards-section cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 card-wrapper">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image card-height p-2"
+                            >
+                            <img class="w-100 h-100"
+                                src="assets/images/ideia.png"
+                                alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h3 class="text-uppercase card-titulo">NEWS</h3>
+                            <p class="card-texto">Mantenha-se atualizado de tudo relacionado ao mundo Tech e
+                                recrutamentos semanais em nosso site.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <main>
-      <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/images/scott-graham-5fNmWej4tAA-unsplash.jpg" class="d-block w-100 img-carousel" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/alexandru-acea-XEB8y0nRRP4-unsplash.jpg" class="d-block w-100 img-carousel" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg" class="d-block w-100 img-carousel3" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </section>
+                <div class="col-sm-4 card-wrapper">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image card-height p-2"
+                            >
+                            <img class="w-100 h-100"
+                                src="assets/images/oportunidades.png"
+                                alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h3 class="text-uppercase card-titulo">OPORTUNIDADES</h3>
+                            <p class="card-texto">Acompanhe a nossa empresa para dicas e cursos para turbinar seu portfólio, tudo para te
+                                ajudar a conquistar sua tão desejada vaga</p>
+                        </div>
+                    </div>
+                </div>
 
-      <section class="text-white">
-        <h2 class="p-5">Somos uma empresa especializada em carreiras de Tecnologia.</h2>
-        <h3 class="mb-5">Nosso maior objetivo é que seu futuro profissional seja brilhante, bem remunerado, alinhado com os seus sonhos e ideais.</h3>
-        
-      </section>
-        
-    </main>
+                <div class="col-sm-4 card-wrapper">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image card-height p-2"
+                            >
+                            <img class="w-100 h-100" 
+                                src="assets/images/planos.png"
+                                alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h3 class="text-uppercase card-titulo">CONFIRA NOSSOS PLANOS!</h3>
+                            <p class="card-texto">Confira nossa assinatura premium para ter acesso a conteúdos
+                                selecionados como cursos, anexos exclusivos e acesso ao grupo de membros</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100" style="text-align:center">
+                    <h5 class="section-title h1">Ultimos posts</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="posts">
+  <div id="displaySlide" onclick="slide()">
+      <div id="areaSlides">
+          <div class="slides">
+              <div class="slides main"
+                  style="background-image: url(view/images/blog/gif_dance.gif); background-size: cover;">
+              </div>
+
+              <div class="slides sec"
+                  style="background-image: url(view/images/blog/metaverso.jpg); background-size: cover;">
+              </div>
+
+              <div class="slides thd"
+                  style="background-image: url(view/images/blog/net30.jpg); background-size: cover;">
+              </div>
+          </div>
+      </div>
+
+
+      <div id="areaTexto">
+          <div id="slideTexto">
+              <h1 id="slideH1">DE OLHOS FECHADOS</h1>
+              <h5 id="slideH6" style="line-height:2">Nós iremos encontrar os melhores profissionais
+                  para o cargo desejado para a sua empresa, todos eles serão responsáveis por
+                  resultados pensados, eficazes e prontos para sair daqui
+                  em uma linda parceria com você.
+              </h5>
+          </div>
+      </div>
+  </div>
+</section>
+    <!--- ultimos posts--->
+
+    <section class="pt-5 pb-5 bg-light" id="blog">
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <h3 class="section-title h1">E Mais!</h3>
+              </div>
+
+              <div class="col-6 text-right">
+                  <a class="btn btnConf mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                      <i class="fa fa-chevron-left"></i>
+                  </a>
+                  <a class="btn btnConf mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                      <i class="fa fa-chevron-right"></i>
+                  </a>
+              </div>
+              <div class="col-12">
+                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="row">
+
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="view/images/blog/react1.jpeg">
+                                          <div class="card-body">
+                                              <h4 class="card-titulo">Fundamentos do React</h4>
+                                              <p class="card-texto">Neste capítulo abordaremos alguns conceitos
+                                                  fundamentais do React... </p>
+                                              <button type="button" class="btn btnConf" onclick=" leia()">leia
+                                                  mais</button>
+                                          </div>
+
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="view/images/blog/dev_ext.jpg">
+                                          <div class="card-body">
+                                              <h4 class="card-titulo">Devs Exterior</h4>
+                                              <p class="card-texto">Fala pessoal, hoje vamos abordar como é trabalhar
+                                                  no exterior na area tech...</p>
+                                              <button type="button" class="btn btnConf">leia mais</button>
+
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="view/images/blog/fW.jpg">
+                                          <div class="card-body">
+                                              <h4 class="card-titulo">Frameworks do Momento</h4>
+                                              <p class="card-texto">Você saberia responder quais frameworks estão em
+                                                  alta em 2022?...</p>
+                                              <button type="button" class="btn btnConf">leia mais</button>
+
+                                          </div>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="view/images/blog/IA.jpeg">
+                                          <div class="card-body">
+                                              <h4 class="card-titulo">A Tecnologia da Alexa</h4>
+                                              <p class="card-texto">Conheça a tecnologia da assistente de voz da
+                                                  Amazon...</p>
+                                              <button type="button" class="btn btnConf">leia mais</button>
+
+                                          </div>
+
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="view/images/blog/equipe.jpg">
+                                          <div class="card-body">
+                                              <h4 class="card-titulo">Trabalho em Equipe</h4>
+                                              <p class="card-texto">Afinal, porquê o trabalho em equipe é tão
+                                                  importante?...</p>
+                                              <button type="button" class="btn btnConf">leia mais</button>
+
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="view/images/blog/github.jpg">
+                                          <div class="card-body">
+                                              <h4 class="card-titulo">GIT e GITHUB</h4>
+                                              <p class="card-texto">Dicas valiosas para versionamento de codigo...</p>
+                                              <button type="button" class="btn btnConf">leia mais</button>
+
+                                          </div>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="view/images/blog/bug.jpg">
+                                          <div class="card-body">
+                                              <h4 class="card-titulo">Não Funciona!</h4>
+                                              <p class="card-texto">Vejas quais principais boas práticas que minimizam
+                                                  erros...</p>
+                                              <button type="button" class="btn btnConf">leia mais</button>
+
+                                          </div>
+
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="view/images/blog/descanso.jpeg">
+                                          <div class="card-body">
+                                              <h4 class="card-titulo">Dando aquela pausa</h4>
+                                              <p class="card-texto">Não pira! O descanso é muito importante no seu
+                                                  desempenho...</p>
+                                              <button type="button" class="btn btnConf">leia mais</button>
+
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="view/images/blog/in.jpeg">
+                                          <div class="card-body">
+                                              <h4 class="card-titulo">Linkedin, como ser visto?</h4>
+                                              <p class="card-textoo">Entenda a impotancia de deixar essa rede sempre
+                                                  atualizada..</p>
+                                              <button type="button" class="btn btnConf">leia mais</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
 
     
-
-
     <footer class="text-center text-lg-start bg-nav text-muted mt-auto">
       <section class=" text-white p-1">
         <div class="container text-center text-md-start mt-5">
