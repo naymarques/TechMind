@@ -13,40 +13,41 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="imagex/png" href="../images/T.svg">
-    <title>TechMind</title>
+    <title>Sobre Nós - TechMind</title>
 </head>
 
 <body>
-    <header class="mb-5">
+    <!-- Cabeçalho -->
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-nav">
-            <div class="container-fluid nav-marg">
-                <a class="navbar-brand" href="../../index.html">
-                    <img src="../images/T.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          <div class="container-fluid nav-marg">
+            <a class="navbar-brand logo" href="../../index.html">
+              <img src="../images/T.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+              <h3 class=" d-inline text-white titulo-logo"></h3></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end nav-marg" id="navbarNavAltMarkup">
-                <div class="navbar-nav cores-letras-nav">
-                    <a class="nav-item nav-link active text-white" href="../../index.html">Home <span
-                            class="sr-only"></span></a>
-                    <a class="nav-item nav-link text-white" href="./cadastro.html">Cadastro</a>
-                    <a class="nav-item nav-link text-white" href="./pricing.html">Planos</a>
-                    <a class="nav-item nav-link text-white" href="./contato.html">Contato</a>
-                    <a class="nav-item nav-link text-white btn btn-primary px-3 botao  data-toggle="modal data-target="#exampleModal" href="./login.html" role="button">Login</a>
-                </div>
+              </button>
+          </div>        
+          <div class="collapse navbar-collapse nav-marg" id="navbarNavAltMarkup">
+            <div class="navbar-nav cores-letras-nav">
+              <a class="nav-item nav-link text-white active" href="../../index.html">Home <span class="sr-only"></span></a>
+              <a class="nav-item nav-link text-white" href="./cadastro.html">Cadastro</a>
+              <a class="nav-item nav-link text-white" href="./pricing.html">Planos</a>
+              <a class="nav-item nav-link text-white" href="./contato.html">Contato</a>
+              <a class="nav-item nav-link text-white btn btn-primary px-3 botao" data-toggle="collapse" data-target="#navbarNavAltMarkup" href="./login.html" role="button">Login</a>            
             </div>
+          </div>
         </nav>
     </header>
 
-    <div class="text-white text-center mb-5">
+    <div class="text-white text-center p-5">
         <h1>Conheça os membros da equipe que desenvolveu esse projeto!</h1>
     </div>
 
+    <!-- Cards Sobre nós -->
     <section class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center cards">
             <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
                 <img src="../images/equipe/nayara2.jpg" class="card-img-top img-posicao-card"
                     alt="foto de uma das integrantes da equipe">
@@ -108,13 +109,16 @@
                     </div>
                 </div>
             </article>
+        </div>
+    </section>
 
-            <footer class="text-center text-lg-start bg-nav text-muted mt-auto fixed-bottom">
-                <div class="text-center p-2  text-white">
-                    © 2022 Front-Enders
-                    <p class="text-reset fw-bold">Projeto para fins educacionais. Todos os direitos reservados</p>
-                </div>
-            </footer>
+    <!-- Rodapé -->
+    <footer class="text-center text-lg-start bg-nav text-muted mt-auto fixed-bottom">
+        <div class="text-center p-2 text-white">
+          © 2022 Front-Enders
+          <p class="text-reset fw-bold">Projeto para fins educacionais. Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 
 </html>

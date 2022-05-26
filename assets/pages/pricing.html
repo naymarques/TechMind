@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="imagex/png" href="../images/T.svg">
-  <title>TechMind</title>
+  <title>Planos - TechMind</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
   <!-- Custom styles for this template -->
@@ -22,35 +22,39 @@
     </symbol>
   </svg>
 
+  <!-- Cabeçalho -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-nav">
       <div class="container-fluid nav-marg">
-        <a class="navbar-brand" href="../../index.html">
-          <img src="../images/T.png" alt="" width="50" height="50" class="d-inline-block align-text-top" />
-        </a>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end nav-marg" id="navbarNavAltMarkup">
+        <a class="navbar-brand logo" href="../../index.html">
+          <img src="../images/T.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+          <h3 class=" d-inline text-white titulo-logo"></h3></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>        
+      <div class="collapse navbar-collapse nav-marg" id="navbarNavAltMarkup">
         <div class="navbar-nav cores-letras-nav">
-          <a class="nav-item nav-link active text-white" href="../../index.html">Home <span class="sr-only"></span></a>
+          <a class="nav-item nav-link text-white active" href="../../index.html">Home <span class="sr-only"></span></a>
           <a class="nav-item nav-link text-white" href="./cadastro.html">Cadastro</a>
           <a class="nav-item nav-link text-white" href="./pricing.html">Planos</a>
           <a class="nav-item nav-link text-white" href="./contato.html">Contato</a>
-          <a class="nav-item nav-link text-white btn btn-primary px-3 botao  data-toggle="modal data-target="#exampleModal" href="./login.html" role="button">Login</a>
+          <a class="nav-item nav-link text-white btn btn-primary px-3 botao" data-toggle="collapse" data-target="#navbarNavAltMarkup" href="./login.html" role="button">Login</a>            
         </div>
       </div>
     </nav>
   </header>
+
+  <!-- título -->
   <section class="pricing-header pb-md-2 mx-auto text-center">
-    <h1 class="display-4 fw-normal text-white">Nossos planos</h1>
+    <h1 class="display-4 fw-normal text-white mt-5">Nossos planos</h1>
     <p class="fs-5 text-white">
       Escolha o plano que melhor se encaixa no seu momento profissional e no
       seu projeto de carreira.
     </p>
   </section>
+
   <main>
     <section class="row row-cols-1 row-cols-md-3 mb-3 text-center p-3 text-white">
       <section class="col">

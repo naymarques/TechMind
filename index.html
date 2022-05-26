@@ -26,20 +26,19 @@
         <div class="container-fluid nav-marg">
           <a class="navbar-brand logo" href="./index.html">
             <img src="./assets/images/T.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
-            <h3 class=" d-inline text-white titulo-logo"><em>echMind</em></h3>
-          </a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <h3 class=" d-inline text-white titulo-logo"><em>echMind</em></h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>        
         <div class="collapse navbar-collapse nav-marg" id="navbarNavAltMarkup">
           <div class="navbar-nav cores-letras-nav">
             <a class="nav-item nav-link text-white active" href="./index.html">Home <span class="sr-only"></span></a>
             <a class="nav-item nav-link text-white" href="./assets/pages/cadastro.html">Cadastro</a>
             <a class="nav-item nav-link text-white" href="./assets/pages/pricing.html">Planos</a>
             <a class="nav-item nav-link text-white" href="./assets/pages/contato.html">Contato</a>
-            <a class="nav-item nav-link text-white btn btn-primary px-3 botao  data-toggle="modal data-target="#exampleModal" href="./assets/pages/login.html" role="button">Login</a>            
+            <a class="nav-item nav-link text-white btn btn-primary px-3 botao" data-toggle="collapse" data-target="#navbarNavAltMarkup" href="./assets/pages/login.html" role="button">Login</a>            
           </div>
         </div>
       </nav>
@@ -53,8 +52,7 @@
                 Para isso nossa plataforma trabalha para te guiar nesse caminho, fornecendo cursos separados em trilhas específicas de acordo com o que você procura.
                 Temos as trilhas de Desenvolvedor Sênior, Tech Lead e de Carreiras Internacionais.</p>
               <a type="button" class="btn btn-size mb-3 botao mt-3" href="./assets/pages/pricing.html" role="button">Conheça agora!</a>
-              </h4>
-              <h5><img src="./assets/images/group1.png" alt="groups" /><span class="my-3 mb-5 text-white">  + de 400 profissionais contratados</span></h5>
+              <p class="m-2"><img src="./assets/images/group1.png" alt="groups" /><span class="ml-2 mb-5 text-white">  + de 400 profissionais contratados</span></p>
           </div>
           <div class="col-md-6 img-about">
             <img class="imagem img-fluid row" src="./assets/images/elipse.png" alt="Realidade virtual"/>         
@@ -101,58 +99,50 @@
         <span class="visually-hidden">Next</span>
       </button>
     </section>
+
     <!-- Cards das trilhas -->
     <section class=" div-card-bg pt-5">
       <div class="about-cards-section cards">
           <div class="container">
               <div class="row">
-                  <div class="col-sm-4">
-                      <div class="card border-0 card-bg">
-                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image card-height p-2"
-                              >
-                              <img class="img-card-size img-fluid"
-                                  src="./assets/images/1.png"
-                                  alt="imagem de um desenvolvedor">
-                          </div>
-                          <div class="card-body text-center">
-                              <h3 class="text-uppercase card-titulo">Trilha de desenvolvedor</h3>
-                              <p class="">Aulas on line, acompanhamento de professores, especialista em RH e profissionais experientes em tecnologia, com o objetivo de te capacitar para ser um desenvolvedor Senior.</p>
-                                  <a type="button" class="btn btn-size botao-card" href="./assets/pages/pricing.html" role="button">Veja aqui!</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="col-sm-4">
+                    <div class="card border-0 card-bg">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image card-height p-2">
+                          <img class="img-card-size img-fluid" src="./assets/images/1.png" alt="imagem de um desenvolvedor">
+                        </div>
+                        <div class="card-body text-center teste">
+                          <h3 class="text-uppercase card-titulo">Trilha de desenvolvedor</h3>
+                          <p class="">Aulas on line, acompanhamento de professores, especialista em RH e profissionais experientes em tecnologia, com o objetivo de te capacitar para ser um desenvolvedor Senior.</p>
+                          <a type="button" class="btn btn-size botao-card" href="./assets/pages/pricing.html" role="button">Veja aqui!</a>
+                        </div>
+                    </div>
+                </div>
 
-                  <div class="col-sm-4">
-                      <div class="card border-0 card-bg">
-                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image card-height p-2"
-                              >
-                              <img class="img-card-size img-fluid"
-                                  src="./assets/images/2.png"
-                                  alt="Imagem de uma lider de equipe">
-                          </div>
-                          <div class="card-body text-center">
-                              <h3 class="text-uppercase card-titulo">Trilha para líderes e gerentes</h3>
-                              <p class="">Aulas on line, acompanhamento de mentores e especialistas em RH, com o objetivo de te tornar um líder ou gerente em Tecnologia.</p>
-                                  <a type="button" class="btn btn-size botao-card" href="./assets/pages/pricing.html" role="button">Veja aqui!</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="col-sm-4">
+                    <div class="card border-0 card-bg">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image card-height p-2">
+                            <img class="img-card-size img-fluid" src="./assets/images/2.png" alt="Imagem de uma lider de equipe">
+                        </div>
+                        <div class="card-body text-center teste">
+                          <h3 class="text-uppercase card-titulo">Trilha para líderes e gerentes</h3>
+                          <p class="">Aulas on line, acompanhamento de mentores e especialistas em RH, com o objetivo de te tornar um líder ou gerente em Tecnologia.</p>
+                          <a type="button" class="btn btn-size botao-card" href="./assets/pages/pricing.html" role="button">Veja aqui!</a>
+                        </div>
+                    </div>
+                </div>
 
-                  <div class="col-sm-4">
-                      <div class="card border-0 card-bg">
-                          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image card-height p-2"
-                              >
-                              <img class="img-card-size img-fluid" 
-                                  src="./assets/images/3.png"
-                                  alt="Imagem de um mapa na tecla enter">
-                          </div>
-                          <div class="card-body text-center">
-                              <h3 class="text-uppercase card-titulo">carreiras internacionais</h3>
-                              <p class="">Acompanhamento personalizado, com aulas de inglês focadas em entrevistas e testes técnicos para grandes empresas americanas e europeias.</p>
-                                  <a type="button" class="btn btn-size botao-card" href="./assets/pages/pricing.html" role="button">Veja aqui!</a>
-                          </div>
-                      </div>
-                  </div>
+                <div class="col-sm-4">
+                    <div class="card border-0 card-bg">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image card-height p-2">
+                            <img class="img-card-size img-fluid" src="./assets/images/3.png" alt="Imagem de um mapa na tecla enter">
+                        </div>
+                        <div class="card-body text-center teste">
+                          <h3 class="text-uppercase card-titulo">carreiras internacionais</h3>
+                          <p class="">Acompanhamento personalizado, com aulas de inglês focadas em entrevistas e testes técnicos para grandes empresas americanas e europeias.</p>
+                          <a type="button" class="btn btn-size botao-card" href="./assets/pages/pricing.html" role="button">Veja aqui!</a>
+                        </div>
+                    </div>
+                </div>
               </div>
           </div>
       </div>
