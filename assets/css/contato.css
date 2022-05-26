@@ -38,3 +38,9 @@
     justify-content: center;
     gap: 1.5rem;
 }
+
+@media(max-width:600px) {
+    .cards {
+        margin-bottom: 10rem;
+    }
+}

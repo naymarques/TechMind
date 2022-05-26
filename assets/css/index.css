@@ -42,6 +42,13 @@
     color: white;
 }
 
+.teste {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .div-card-bg {
     background: rgba(143, 116, 155, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
