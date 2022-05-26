@@ -68,6 +68,10 @@ class Controller {
         controller.comparaView()
     })
 
+    jQuery('#btn').click(() => {
+        alert('Cadastro Efetuado com sucesso!')
+        location.assign('./login.html')
+    })
 
 
 
