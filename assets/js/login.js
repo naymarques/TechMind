@@ -11,6 +11,7 @@ $(document).ready(function(){
         },
         submitHandler: function(form){
             alert("Login feito com sucesso!")
+            location.assign('../../index.html')
         }
     })
 })

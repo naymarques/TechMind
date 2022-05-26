@@ -8,6 +8,7 @@ $(document).ready(function(){
         },
         submitHandler: function(form){
             alert("Email de recuperação de senha enviado com sucesso!")
+            location.assign('../../index.html')
         }
     })
 })
