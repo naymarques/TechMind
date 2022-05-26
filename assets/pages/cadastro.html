@@ -30,7 +30,7 @@
               </button>
           </div>        
           <div class="collapse navbar-collapse nav-marg" id="navbarNavAltMarkup">
-            <div class="navbar-nav cores-letras-nav">
+            <div class="navbar-nav cores-letras-nav menu">
               <a class="nav-item nav-link text-white active" href="../../index.html">Home <span class="sr-only"></span></a>
               <a class="nav-item nav-link text-white" href="./cadastro.html">Cadastro</a>
               <a class="nav-item nav-link text-white" href="./pricing.html">Planos</a>
@@ -81,7 +81,7 @@
           </div>
           <div class="col-md-5">
             <label for="rg" class="form-label">RG</label>
-            <input type="rg" class="form-control" id="inputRg" placeholder="123456789" required>
+            <input type="rg" class="form-control" id="inputRg" placeholder="123456789" maxlength="10" required>
             <div id="rgInvalido" class="invalid-feedback">
               Não é um RG Válido
             </div>
@@ -94,7 +94,7 @@
 
             <div class="col-md-3">
               <label for="cep" class="form-label">CEP</label>
-              <input type="zip" class="form-control" id="inputCep" placeholder="12345-789" required>
+              <input type="zip" class="form-control" id="inputCep" placeholder="12345-789" maxlength="9" required>
               <div id="cepInvalido" class="invalid-feedback">
                 CEP Inválido
               </div>
