@@ -10,7 +10,7 @@ O projeto foi a criação de uma empresa fictícia que pudesse ajudar o mercado 
 Somos uma empresa especializada em mentoria para Carreiras de Tecnologia.
 Nosso maior objetivo é que seu futuro profissional seja brilhante, bem remunerado, alinhado com os seus sonhos e ideais.
 
-## 🔧 Participantes e contribuidos
+## 🔧 Participantes e contribuidores
 
 Nayara Marques
 Nayara Menezes
